@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace pilasycolas
 {
-    public class ColaDeListas
+    public class ColaDeListas : Cola
     {
         private Nodo delante;
         private Nodo detras;
@@ -17,7 +17,7 @@ namespace pilasycolas
             detras = null;
         }
 
-        public void AnadirCola(int element)
+        public void AnadirACola(int element)
         {
             Nodo nuevoNodo = new Nodo(element);
             if (detras == null)
@@ -32,7 +32,7 @@ namespace pilasycolas
             }
         }
 
-        public int QuitarCola()
+        public int QuitarDeCola()
         {
             if (delante == null)
             {
@@ -62,6 +62,25 @@ namespace pilasycolas
             {
                 return delante.valor;
             }
+        }
+
+        public override string ToString()
+        {
+            StringBuilder resultado = new StringBuilder("[");
+            Nodo actual = delante;
+
+            while (actual != null)
+            {
+                resultado.Append(actual.valor);
+                if (actual.siguiente != null)
+                {
+                    resultado.Append(", ");
+                }
+                actual = actual.siguiente;
+            }
+
+            resultado.Append("]");
+            return resultado.ToString();
         }
     }
 
