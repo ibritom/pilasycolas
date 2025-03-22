@@ -8,8 +8,8 @@ namespace pilasycolas
 {
     internal interface Pila
     {
-        void push(int elemento);
-        void pop();
-        void top();
+        void Push(int elemento);
+        int Pop();
+        int Top();
     }
 }
