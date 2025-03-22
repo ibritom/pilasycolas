@@ -49,6 +49,22 @@ namespace pilasycolas
                 return pila[cima];
             }
         }
+        // Sobrecarga del método ToString
+        public override string ToString()
+        {
+            if (cima == -1)
+            {
+                return "Pila vacía";
+            }
+
+            StringBuilder sb = new StringBuilder();
+            for (int i = cima; i >= 0; i--)
+            {
+                sb.Append(pila[i]);
+                if (i > 0) sb.Append(", ");
+            }
+            return sb.ToString();
+        }
 
     }
 }
