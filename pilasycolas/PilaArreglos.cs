@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace pilasycolas
 {
-    internal class PilaArreglos : Pila
+    public class PilaArreglos : Pila
     {
         private int[]? pila;
         private int cima;

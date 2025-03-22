@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace pilasycolas
 {
-    internal interface Pila
+    public interface Pila
     {
         void Push(int elemento);
         int Pop();

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace pilasycolas
 {
-    internal class PilaListas : Pila
+    public class PilaListas : Pila
     {
         public PilaListas()
         {

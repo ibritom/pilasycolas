@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace pilasycolas
 {
-    internal interface Cola
+    public interface Cola
     {
         void AnadirACola(int elemento);
         int QuitarDeCola();

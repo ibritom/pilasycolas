@@ -13,7 +13,7 @@ namespace PruebasPilasYColas
             pila.Push(3);
             pila.Push(4);
             pila.Push(5);
-            Assert.AreEqual("1, 2, 3, 4, 5", pila.ToString());
+            Assert.AreEqual("5, 4, 3, 2, 1", pila.ToString());
         }
 
         [TestMethod]
@@ -26,7 +26,7 @@ namespace PruebasPilasYColas
             pila.Push(4);
             pila.Push(5);
             pila.Pop();
-            Assert.AreEqual("1, 2, 3, 4", pila.ToString());
+            Assert.AreEqual("4, 3, 2, 1", pila.ToString());
         }
 
         [TestMethod]
@@ -49,7 +49,7 @@ namespace PruebasPilasYColas
             pila.Push(3);
             pila.Push(4);
             pila.Push(5);
-            Assert.AreEqual("1, 2, 3, 4, 5", pila.ToString());
+            Assert.AreEqual("5, 4, 3, 2, 1", pila.ToString());
         }
     }
 }
