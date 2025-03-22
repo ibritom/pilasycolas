@@ -72,6 +72,26 @@ namespace pilasycolas
                 return cola[delante];
             }
         }
+
+        public override string ToString()
+        {
+            if (delante == -1)
+            {
+                return "[]"; // Cola vacía
+            }
+
+            StringBuilder resultado = new StringBuilder("[");
+            for (int i = delante; i <= destras; i++)
+            {
+                resultado.Append(cola[i]);
+                if (i < destras)
+                {
+                    resultado.Append(", ");
+                }
+            }
+            resultado.Append("]");
+            return resultado.ToString();
+        }
     }
 
 }
